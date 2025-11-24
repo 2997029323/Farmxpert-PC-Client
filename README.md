@@ -1,4 +1,4 @@
-#  FarmXpert Agricultural Phenotyping Assistant
+#  FarmXpert Agricultural Phenotypic Analysis Assistant
 
 A PyQt5-based desktop application that connects agricultural visual question answering capabilities and offers a unified human–computer interaction interface.
 
