@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python 调试程序: 当前文件 (多线程)", // 可以改个名字，方便区分
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false, // <-- 关键修改：允许调试器进入库代码，有助于多线程调试
+             "subProcess": true // 针对QThread通常不需要，但如果上面不行可以尝试加上
+        }
+    ]
+}

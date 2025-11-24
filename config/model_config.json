@@ -1,0 +1,53 @@
+{
+  "model_type": "api",
+  "api_url": "https://xiaoai.plus/v1/chat/completions",
+  "health_url": "https://xiaoai.plus/v1/models",
+  "model_name": "gpt-4o",
+  "api_key": "sk-1utF5d6j8cBmI6fe03A157Da370d4528B2C9015a7a114dEf",
+  "timeout": 60,
+  "max_tokens": 1024,
+  "temperature": 0.7,
+  
+  "alternative_configs": {
+    "openai_api": {
+      "model_type": "api",
+      "api_url": "https://api.openai.com/v1/chat/completions",
+      "model_name": "gpt-4-vision-preview",
+      "api_key": "your_openai_api_key_here",
+      "timeout": 30,
+      "max_tokens": 1024,
+      "temperature": 0.3
+    },
+    
+    "claude_api": {
+      "model_type": "api", 
+      "api_url": "https://api.anthropic.com/v1/messages",
+      "model_name": "claude-3-sonnet-20240229",
+      "api_key": "your_anthropic_api_key_here",
+      "timeout": 30,
+      "max_tokens": 1024,
+      "temperature": 0.5
+    },
+    
+    "local_model": {
+      "model_type": "local",
+      "model_path": "./models/llava-v1.5-7b",
+      "device": "cuda",
+      "precision": "float16",
+      "max_tokens": 1024,
+      "temperature": 0.7
+    }
+  },
+  
+  "preprocessing": {
+    "max_image_size": [1024, 1024],
+    "image_quality": 95,
+    "image_format": "JPEG"
+  },
+  
+  "postprocessing": {
+    "max_response_length": 2048,
+    "enable_markdown": true,
+    "filter_unsafe_content": false
+  }
+}
