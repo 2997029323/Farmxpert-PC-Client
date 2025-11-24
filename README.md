@@ -16,3 +16,5 @@ A PyQt5-based desktop application that connects agricultural visual question ans
 1. `python -m venv .venv && source .venv/bin/activate` (on Windows use `.\.venv\Scripts\activate`)
 2. `pip install -r requirements.txt`
 3. `python main.py`
+
+
