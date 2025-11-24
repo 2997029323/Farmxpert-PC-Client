@@ -2,9 +2,7 @@
 
 A PyQt5-based desktop application that connects agricultural visual question answering capabilities and offers a unified human–computer interaction interface.
 
-## Main Structure
 
-(Section intentionally left blank to match the current document.)
 
 ## Runtime Environment
 
