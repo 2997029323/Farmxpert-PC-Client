@@ -289,6 +289,7 @@ class ModelManager(QObject):
             #     "chat_history_messages": serializable_history
             # }
 
+
             BACKEND_API_URL = "https://farmxpert.vip.cpolar.cn"
             payload_iPheno = {
                 "image_base64": processed_data['image'],
