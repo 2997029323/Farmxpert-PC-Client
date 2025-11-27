@@ -364,7 +364,7 @@ class ChatHistoryWidget(QWidget):
     
     def add_welcome_message(self):
         """添加欢迎消息"""
-        welcome_text = ("您好！我是FarmXpert，来自AI4Bread团队的农业视觉问答助手。\n\n"
+        welcome_text = ("您好！我是iPheno，来自AI4Bread团队的农业视觉问答助手。\n\n"
                        "请上传农业相关图片，您可以：\n"
                        "• 绘制感兴趣的区域\n"
                        "• 询问关于图片或特定区域的问题\n"

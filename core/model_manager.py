@@ -279,7 +279,7 @@ class ModelManager(QObject):
         return output_data
     def _run_api_inference(self, processed_data):
         try:
-            ###调用farmxpert的api
+            ###调用iPheno的api
             # 规范
 
             # payload = {
@@ -290,8 +290,7 @@ class ModelManager(QObject):
             # }
 
             BACKEND_API_URL = "https://farmxpert.vip.cpolar.cn"
-
-            payload_farmxpert = {
+            payload_iPheno = {
                 "image_base64": processed_data['image'],
                 "polygons": self._convert_regions_to_polygons(processed_data['regions'])["polygons"],
                 "prompt": processed_data['original_question'],
@@ -299,7 +298,7 @@ class ModelManager(QObject):
             }
             response_from_api = requests.post(
                 f"{BACKEND_API_URL}/infer",
-                json=payload_farmxpert,
+                json=payload_iPheno,
                 timeout=300
             )
             response_from_api.raise_for_status()

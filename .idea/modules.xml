@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/FarmXpert.iml" filepath="$PROJECT_DIR$/.idea/FarmXpert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/iPheno.iml" filepath="$PROJECT_DIR$/.idea/iPheno.iml" />
     </modules>
   </component>
 </project>
